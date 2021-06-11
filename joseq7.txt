@@ -1,0 +1,21 @@
+# Q7.Text file data ko json file data mai convert karo,jaise ki neeche diya hai
+
+
+
+import json
+
+# dict1={
+#     "Name":"Ram", 
+#     "Class":"IV", 
+#     "Age":9 
+# }
+dict1={
+    "Name" : "Abhishek",
+    "Designation" : "CEO of navgurukul",
+    "Gender male": "IV",
+
+    "Age" : 29
+}
+file=open("q7.json","w")
+json.dump(dict1,file,indent=2)
+file.close()
